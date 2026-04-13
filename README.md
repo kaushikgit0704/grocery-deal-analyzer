@@ -59,12 +59,15 @@ Blinkit and Zepto return **unavailable** (no price) if the Apify run fails — n
 pip install -r requirements.txt
 ```
 
-### 2. Set environment variables
+or
+
 ```bash
-cp .env.example .env
-# Edit .env and fill in your keys
-source .env
+uv sync
 ```
+
+### 2. Set environment variables
+
+# Creat/Edit .env and fill in your keys
 
 Key variables:
 - `ANTHROPIC_API_KEY` — required for all LLM agents
