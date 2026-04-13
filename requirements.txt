@@ -1,0 +1,78 @@
+# ============================================================
+# Grocery Price Comparison Agent — Full Dependency List
+# Python >= 3.10 required  (3.12 recommended)
+#
+# Install:
+#   pip install -r requirements.txt
+# ============================================================
+
+# ── Direct dependencies ──────────────────────────────────────
+
+# Anthropic SDK — powers Orchestrator, Deal Analyst, Report Agent,
+# and the LLM fallback inside every store scraper
+anthropic>=0.40.0
+
+# Async HTTP client — used by BigBasket and Amazon Fresh scrapers
+httpx>=0.27.0
+
+# Apify platform client — used to run Blinkit & Zepto Actors
+# Free account: https://console.apify.com ($5 free credits/month)
+apify-client>=1.7.0
+
+# ── Anthropic SDK transitive deps ───────────────────────────
+
+# Async I/O primitives (used by anthropic + httpx)
+anyio>=4.0.0
+
+# TLS certificate bundle
+certifi>=2024.1.1
+
+# HTTP/1.1 transport layer for httpx
+httpcore>=1.0.0
+
+# Internationalized domain name encoding
+idna>=3.4
+
+# JSON parsing (fast Rust-backed, used by anthropic)
+jiter>=0.4.0
+
+# OS/distro detection (used by anthropic)
+distro>=1.8.0
+
+# Docstring parsing utility (used by anthropic)
+docstring-parser>=0.15
+
+# Async cancellation shim (used by anyio)
+sniffio>=1.3.0
+
+# Data validation library (used by anthropic for request/response models)
+pydantic>=2.5.0
+
+# Pydantic core (Rust-backed validation engine)
+pydantic-core>=2.14.0
+
+# Type annotation helpers used by pydantic
+annotated-types>=0.6.0
+
+# Runtime type introspection (used by pydantic)
+typing-inspection>=0.4.0
+
+# Backport of newer typing features for Python < 3.12
+typing-extensions>=4.8.0
+
+# HTTP/1.1 state machine (used by httpcore)
+h11>=0.14.0
+
+# ── Apify client transitive deps ────────────────────────────
+
+# Apify shared utilities and constants
+apify-shared>=1.1.0
+
+# Coloured terminal output (used by apify-client for logging)
+colorama>=0.4.6
+
+# HTTP client used internally by apify-client
+impit>=0.1.0
+
+# Iteration utilities (used by apify-client)
+more-itertools>=9.0.0
