@@ -228,3 +228,4 @@ TOTAL                     (optimized cart)     ₹  1105 ₹   288
    Blinkit: Basmati Rice, Dal, Milk, eggs
 
 [System] Full data saved to grocery_report.json
+
